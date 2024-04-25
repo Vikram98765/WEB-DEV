@@ -1,0 +1,691 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.section3{
+    position: relative;
+}
+
+.sec{
+   /* width: 100%;
+   height: 100vh; */
+    /* background-image: url(images/Property\ 1=Default.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative; */
+    
+}
+.dropdown-menu {
+    background-color: transparent !important;
+}
+.nav-item a{
+    color: white;
+    margin-left: 5px;
+}
+
+@keyframes bor{
+    from{border-bottom: 0px; width: 0%;}
+    to{border-bottom: 3px solid #8FFFEC; width: 90%;}
+}
+.chng:hover{
+    color: #8FFFEC;
+    animation-duration: 1s;
+    animation-name: bor;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+.box{
+    
+    height: 50px;
+    background-color:#17233C;
+    position: relative;
+    bottom: -500px;
+    
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    
+    animation-fill-mode: forwards;
+    margin-left: 20px;
+}
+@keyframes slide {
+    from{bottom: -500px;}
+    to{bottom:-100px;}
+    
+}
+.b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    line-height: 50px;
+}
+.box:hover .b{
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    animation-name: banime;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: Linear;
+    display: block;
+
+    
+}
+@keyframes banime{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+    .sec3 .row {
+        margin-left: 15px; /* Adjust as needed */
+        margin-right: 15px; /* Adjust as needed */
+    }
+    
+
+.sec2{
+    
+    width: 100%;
+    height: auto;
+    background-image: url(images/banner-one-bg\ 1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #0E1527;
+    
+}
+.sec2 button{
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    background-size: auto; /* Reset background size */
+    background-repeat: no-repeat; 
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 30px;
+    color: white;
+
+    
+}
+.sec2 h1{
+    font-size: 50px;
+}
+.sec2 .row{
+    padding-top: 50px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000; 
+    background-color: #0E1527; 
+    padding: 20px;
+    
+}
+.navbar ul{
+    margin-right: 50px;
+}
+.adj{
+    position: relative;
+    top: 100px;
+    left: 56px;
+}
+/* .btt button{
+    margin-top: 100px;
+} */
+.sec2 h1{
+    position: relative;
+    animation-name: lslide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    right: 600px;
+}
+@keyframes lslide {
+    from{position: relative;right:600px;}
+    to{position: relative;right:0px;}
+    
+}
+.sec2 button{
+    position: relative;
+    animation-name: dslide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top:200px;
+ 
+}
+@keyframes dslide {
+    from{top:200px; }
+    to{top:0px;}
+    
+}
+.sec2 img{
+   opacity: 0;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+    
+}
+.sec3{
+    
+    height: 190vh;
+    background-image: url("images/Rectangle\ 4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    
+}
+.sec3 h1{
+    position: relative;
+    top: 300px;
+}
+.sec3 .con{
+    position: relative;
+    top: 100px;
+}
+.sec3 .bt{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    background-size: auto; /* Reset background size */
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    
+    
+    
+}
+.sec4 {
+    position: relative; /* Ensure sec4 acts as the positioning context */
+    width: 100%;
+    height: auto;
+    background-image: url("images/Rectangle\ 14.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.insec4 {
+    position: absolute; /* Position insec4 absolutely within sec4 */
+    top: 0; /* Align insec4 to the top of sec4 */
+    left: 0; /* Align insec4 to the left of sec4 */
+    width: 90%;
+    height: 100vh;
+    background-image: url("images/vecteezy_technology-background-concept-circuit-board-electronic_6430145\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     /* Ensure insec4 appears on top of sec4 */
+}
+.sec4 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+.sec4 .card{
+    position: relative;
+    top: 150px;
+    background-color: #202E42;
+    height: 300px;
+    z-index: 1;
+    margin-left: 20px;
+}
+.card-body{
+    position:absolute;
+    bottom:0;
+    left: 0;
+}
+
+.tx{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.sec4 img:hover{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    position: relative;
+    margin-top: 0px;
+    
+}
+.cx3{
+    padding-top:250px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+.cx3 button{
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    width: 200px;
+    font-size: 15px;
+    background-size: auto; /* Reset background size */
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 100px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.sec5{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/Rectangle\ 15.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sec5 button{
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    background-size: auto; /* Reset background size */
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+}
+.sec5 .row{
+    padding-top: 150px;
+}
+.sec5 .card:hover{
+    width: 14rem;
+}
+.line img{
+    
+    z-index: 1;
+    
+    
+}
+.line2 img{
+    z-index: 1;
+    padding-top: 100px !important;
+}
+.sec6{
+    width: 100%;
+    height: auto;
+    background-image: url("images/Rectangle\ 27.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 205px;
+    padding-bottom: 25px;
+}
+.sec6 .footer{
+    width: 100%;
+    height: 60px;
+    background-color: #17233C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    
+    
+}
+
+.footer .pp{
+   margin: auto;
+}
+.footer .cir{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+}
+.ro{
+    width: 100%;
+    height: 0px;
+    padding-left: 80px;
+}
+.row {
+     --bs-gutter-x: 0rem;
+}
+.rx{
+    
+}
+
+
+
+.cx {
+    
+    width: 100%; /* Adjust width as needed */
+    z-index: 1;
+    position: relative;
+    
+    
+}
+.box1,.box2,.box3,.box4{
+    width: 70px;
+    height: 300px;
+    margin-left: 5px;
+    float: left;
+    transition: width 0.3s ease;
+}
+.box1:hover,.box2:hover,.box3:hover,.box4:hover{
+    width: 250px;
+}
+
+.sec1,.sec2,.sec3,.sec4{
+    overflow: hidden;
+}
+
+
+@media (min-width:768px) and (max-width: 992px) {
+     .box{
+        width: 90% !important;
+        margin-left: 0px;
+    }
+    .sec3 .b{
+        width: 100% !important;
+    }
+    .sec4 .card{
+        width: 70% !important;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .dropdown-menu {
+        max-width: 200px !important; /* Adjust this value as needed */
+    }
+    .nav-item{
+        max-width: 100px;
+        
+    }
+    .sec5 button{
+        background-image: linear-gradient(to right,#85EBEC,#4468E4);
+        background-size: auto; /* Reset background size */
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 100px;
+    }
+    .sec2 img{
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+        
+    }
+    
+    
+  }
+  @media(min-width:768px) and (max-width:991px){
+    
+  }
+  @media (min-width:576px) and (max-width: 768px) {
+    .box{
+       width: 90% !important;
+       margin-left: 0px;
+   }
+   .sec2 img{
+    width: 50%;
+    height: 50%;
+    margin-left: 25% !important;
+    margin-top: 10% !important;
+    
+}
+   .sec3 .b{
+       width: 100% !important;
+   }
+   .sec4 .card{
+    width: 70% !important;
+    margin: auto;
+    margin-top: 20px;
+}
+  .sec5 .sc1{
+    width: 100%;
+    text-align: center;
+  }
+  .sec5 .sc2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sec2 img{
+    margin-left: 20px;
+  }
+  .con4 p{
+    float: left !important;
+  }
+  .dropdown-menu {
+    max-width: 200px !important; /* Adjust this value as needed */
+}
+.sec3 .row {
+    margin-left: 90px !important; /* Adjust as needed */
+    margin-right: 15px; /* Adjust as needed */
+}
+.nav-item{
+    max-width: 100px;
+    
+}
+    .sec2 button{
+        background-image: linear-gradient(to right,#85EBEC,#4468E4);
+        background-size: auto; /* Reset background size */
+        background-repeat: no-repeat; 
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 100px;
+        margin-top: 30px;
+        color: white;
+        
+        
+    }
+    .cx3 button{
+        background-image: linear-gradient(to right,#85EBEC,#4468E4);
+        width: 180px;
+        font-size: 15px;
+        background-size: auto; /* Reset background size */
+        background-repeat: no-repeat;
+        color: white;
+        border-radius: 100px;
+        
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+   
+ }
+ @media (min-width:0px) and (max-width: 576px) {
+    .sec3 .row {
+        margin-left: 10% !important; /* Adjust as needed */
+       
+    }
+    .sec2 img{
+        width: 50%;
+        height: 50%;
+        margin-left: 25% !important;
+        margin-top: 10% !important;
+        
+    }
+    .box{
+       width: 90% !important;
+       margin-left: 0px;
+   }
+   .sec4 .card{
+    width: 100% !important;
+   }
+   .cx3 button{
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    width: 180px;
+    font-size: 15px;
+    background-size: auto; /* Reset background size */
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 100px;
+    
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+   .sec2 button{
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    background-size: auto; /* Reset background size */
+    background-repeat: no-repeat; 
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 15px;
+    
+    
+}
+.sec3 .bt{
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    background-image: linear-gradient(to right,#85EBEC,#4468E4);
+    background-size: auto; /* Reset background size */
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    color: white;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    
+    
+    
+}
+   .sec3 .b{
+       width: 100% !important;
+   }
+   .sec2 h1{
+    font-size: 30px;
+   }
+   .sec4 .card{
+    width: 70% !important;
+    margin: auto;
+    margin-top: 20px;
+}
+    .sec5 .sc1{
+    width: 100%;
+    text-align: center;
+  }
+  .sec5 .sc2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sec2 .adj{
+    margin:auto;
+    
+
+  }
+  .con4 p{
+    clear: both;
+    float: left !important;
+  }
+  .ro{
+    padding-left: 10px;
+    width: 100%;
+  }
+  .ro .col2{
+    margin-left: 10px;
+  }
+  .ro col1{
+    margin-right: 15px;
+  }
+  .ro .chg{
+    font-size: 10px !important;
+    font-weight: normal !important;
+
+  }
+  .sec6 .footer{
+    margin-top: 50px;
+  }
+  .sec2 img{
+    margin-left: 50px;
+  }
+  .dropdown-menu {
+    max-width: 200px !important; /* Adjust this value as needed */
+}
+.nav-item{
+    max-width: 100px;
+    
+}
+ }
+ @media (max-width: 575px) {
+    .footer {
+      height: auto;
+      padding: 10px 0; /* Adjust padding as needed */
+    }
+    
+    .footer img {
+      width: 60px; /* Adjust logo size */
+      margin-right: 10px; /* Add spacing between logo and text */
+    }
+    
+    .footer .pp {
+      font-size: 12px; /* Adjust text size */
+      text-align: center;
+    }
+    
+    .footer .cir {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+       /* Adjust spacing between icons */
+    }
+    
+    .footer .cir i {
+      font-size: 12px; /* Adjust icon size */
+    }
+    .navbar{
+        max-width: 100% !important;
+    }
+    .dropdown-menu {
+        max-width: 200px !important; /* Adjust this value as needed */
+    }
+  }
+  @media (max-width: 350px){
+    .line img{
+        width: 300px;
+    }
+    .sec2 h1{
+        font-size: 25px;
+    }
+  }
+    
+  
